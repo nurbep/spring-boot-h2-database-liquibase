@@ -1,0 +1,13 @@
+com\hhimanshu\business\BooksManager.class
+com\hhimanshu\persistence\entities\Book.class
+com\hhimanshu\MessageConfig.class
+com\hhimanshu\persistence\entities\BaseEntity.class
+com\hhimanshu\business\AuthorsManager.class
+com\hhimanshu\persistence\entities\Audit.class
+com\hhimanshu\persistence\repositories\AuthorRepository.class
+com\hhimanshu\persistence\entities\ISBN.class
+com\hhimanshu\persistence\entities\Author.class
+com\hhimanshu\ApiController.class
+com\hhimanshu\SpringBootLiquibaseApplication.class
+com\hhimanshu\Main.class
+com\hhimanshu\persistence\repositories\BookRepository.class

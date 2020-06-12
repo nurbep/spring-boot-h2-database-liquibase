@@ -1,0 +1,47 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "Create METRICS table",
+        "author": "kskronek",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN"
+          },
+          {
+            "not": [
+              {
+                "changeSetExecuted": {
+                  "id": "Create METRICS table",
+                  "author": "kskronek",
+                  "changeLogFile": "changelogs/CreateMetricsTable.json"
+                }
+              }
+            ]
+          }
+        ],
+        "changes": [
+          {
+            "createTable": {
+              "tableName": "isbns",
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "type": "int",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                }
+                
+               
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

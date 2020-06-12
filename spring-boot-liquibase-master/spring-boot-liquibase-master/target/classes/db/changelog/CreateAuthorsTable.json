@@ -1,0 +1,54 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "create_projects_table",
+        "author": "Michael Rangel",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN"
+          },
+          {
+            "not": [
+              {
+                "changeSetExecuted": {
+                  "id": "create_projects_table",
+                  "author": "Michael Rangel",
+                  "changeLogFile": "changelogs/CreateProjectsTable.json"
+                }
+              }
+            ]
+          }
+        ],
+        "changes": [
+          {
+            "createTable": {
+              "tableName": "authors",
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "type": "int",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "type": "varchar(100)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "databaseChangeLog": [
+    {
+      "include": {
+        "file": "/db/changelog/CreateAuthorsTable.json"
+      }
+    },
+    {
+      "include": {
+        "file": "/db/changelog/CreateISBNsTable.json"
+      }
+    },
+    {
+      "include": {
+        "file": "/db/changelog/AddISBNName.json"
+      }
+    },
+    {
+      "include": {
+        "file": "/db/changelog/CreateBooksTable.json"
+      }
+    },
+    {
+      "include": {
+        "file": "/db/changelog/02-insert-data-authors.xml"
+      }
+    },
+    {
+      "include": {
+        "file": "/db/changelog/02-insert-data-isbns.xml"
+      }
+    },
+    {
+      "include": {
+        "file": "/db/changelog/02-insert-data-books.xml"
+      }
+    }
+  ]
+}

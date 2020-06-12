@@ -1,0 +1,41 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "addResourceCountToMetricsAudTable",
+        "author": "James Montante",
+        "preConditions": [
+          {
+            "onFail": "MARK_RAN"
+          },
+          {
+            "not": [
+              {
+                "changeSetExecuted": {
+                  "id": "addResourceCountToMetricsAudTable",
+                  "author": "James Montante",
+                  "changeLogFile": "changelogs/AddResourceCountToMetricsAudTable.json"
+                }
+              }
+            ]
+          }
+        ],
+        "changes": [
+          {
+            "addColumn": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "name",
+                    "type": "varchar(50)"
+                  }
+                }
+              ],
+              "tableName": "isbns"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
